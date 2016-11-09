@@ -1,0 +1,22 @@
+> Elastic Search plugin che permette di effetuare la cosine similarty utilizzando delle matrici tfidf.
+> link allo script originale: https://github.com/imotov/elasticsearch-native-script-example
+
+#Come Installare
+
+> Scaricare e compilare plugin di elasticsearch:
+
+```sudo mvn package```
+
+> (comando fatto partire nella cartella dove si trova il file pom.xml appartenente al plugin)
+
+Fermare il servizio di elasticsearch prima di procedere con questa operazione:
+
+> installare il plugin di elasticsearch (posizionarsi nella cartella di installazione di elasticsearch, ad esempio /usr/share/elasticsearch) (il nome "plugin" può variare)
+
+``` sudo bin/plugin --url file:plugins/plugin/target/releases/example-plugin-1.0-SNAPSHOT.zip --install plugin ```
+
+> comando per disinstallare, se necessario:
+
+```sudo bin/plugin --remove plugin```
+
+Nella cartella example è presente un esempio che testa se lo script è stato installato correttamente.
